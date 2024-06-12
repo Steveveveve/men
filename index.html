@@ -9,34 +9,35 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #f4f4f4;
             color: #333;
         }
 
         header {
-            background-color: #4CAF50;
+            background-color: #0073e6;
             color: white;
             padding: 20px;
             text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         nav {
             display: flex;
             justify-content: center;
-            background-color: #f1f1f1;
+            background-color: #fff;
             padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         nav a {
-            color: #4CAF50;
+            color: #0073e6;
             padding: 10px 20px;
             text-decoration: none;
-            text-align: center;
             font-weight: bold;
         }
 
         nav a:hover {
-            background-color: #ddd;
+            background-color: #e6f7ff;
         }
 
         section {
@@ -45,17 +46,19 @@
             margin: 20px auto;
             background: white;
             border-radius: 4px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 60px; /* 添加底部间距 */
         }
 
         h2 {
-            border-bottom: 2px solid #4CAF50;
+            border-bottom: 2px solid #0073e6;
             padding-bottom: 5px;
             font-size: 1.8em;
+            color: #0073e6;
         }
 
         h3 {
-            color: #4CAF50;
+            color: #0073e6;
             font-size: 1.4em;
             margin-top: 20px;
         }
@@ -68,9 +71,9 @@
         footer {
             text-align: center;
             padding: 10px;
-            background-color: #4CAF50;
+            background-color: #0073e6;
             color: white;
-            position: fixed;
+            position: relative;
             bottom: 0;
             width: 100%;
         }
@@ -80,12 +83,34 @@
             margin: 0 auto;
             max-width: 150px;
             border-radius: 50%;
-            border: 2px solid #4CAF50;
+            border: 2px solid #0073e6;
             margin-top: 20px;
         }
 
         .center {
             text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-section {
+            text-align: center;
+        }
+
+        .profile-section img {
+            max-width: 150px;
+            border-radius: 50%;
+            border: 2px solid #0073e6;
+            margin-bottom: 20px;
+        }
+
+        .profile-section p {
+            max-width: 600px;
+            margin: 0 auto;
         }
     </style>
 </head>
@@ -107,20 +132,19 @@
 
 <section id="home">
     <h2>主页</h2>
-    <p>欢迎来到我的个人网站！我是 Steven Men，目前在加拿大滑铁卢大学学习金融分析与风险管理，辅修统计学。</p>
+    <p>欢迎来到我的个人网站！我是 Steven Men，目前在滑铁卢大学学习金融分析与风险管理，辅修统计学。</p>
 </section>
 
 <section id="about">
     <h2>关于我</h2>
-    <div class="center">
-        <img src="https://github.com/Steveveveve/y3menpersonal/assets/102253442/b125f87f-4ffb-4f24-807a-dd569b7cd128" alt="Steven Men's Photo" class="photo">
-    </div>
-    <p>我是 Steven Men，目前在滑铁卢大学就读，主修金融分析与风险管理，辅修统计学。我对会计、数据管理和投资分析有深入的研究和实践经验。</p>
-    <p>联系方式：<br>
+    <div class="profile-section">
+        <img src="019c0441fd6c7bad14238bb875e1469.jpg" alt="Steven Men's Photo">
+        <p>我是 Steven Men，目前在加拿大滑铁卢大学就读，主修金融分析与风险管理，辅修统计学。我对会计、数据管理和投资分析有深入的研究和实践经验。</p>
+        <p>联系方式：<br>
         手机：289-339-8643<br>
         邮箱：y3men@uwaterloo.ca<br>
-        学生证号码：21013177
-    </p>
+        学生证号码：21013177</p>
+    </div>
 </section>
 
 <section id="experience">
